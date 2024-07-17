@@ -1,1 +1,39 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIXAM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MIXAM</h1>
+    </header>
+    <main>
+        <section id="order-section">
+            <h2>Pesan Sekarang Juga</h2>
+            <form id="order-form">
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" name="pickup" required>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                
+                <label for="vehicle">Select Vehicle:</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="motorcycle">Motorcycle</option>
+                    <option value="car">Car</option>
+                </select>
+                
+                <button type="submit">Order Now</button>
+            </form>
+        </section>
+        <section id="orders">
+            <h2>Active Orders</h2>
+            <ul id="order-list"></ul>
+        </section>
+    </main>
+    <script src="styles.js"></script>
+</body>
+</html>
